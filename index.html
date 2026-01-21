@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Sikka | Premium Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --accent: #d4af37; /* Gold for Premium Feel */
+            --text: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Navigation */
+        nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 15px 40px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            gap: 30px;
+            z-index: 1000;
+        }
+
+        nav a { color: #fff; text-decoration: none; font-size: 0.85rem; font-weight: 400; opacity: 0.7; transition: 0.3s; }
+        nav a:hover { opacity: 1; color: var(--accent); }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 10vw, 6rem);
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .hero p { font-size: 1.2rem; opacity: 0.6; max-width: 600px; margin-bottom: 30px; }
+
+        /* Bento Grid System */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto 100px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 200px;
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(5px);
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.07);
+            border-color: var(--accent);
+        }
+
+        /* Card Variations */
+        .card-large { grid-column: span 2; grid-row: span 2; }
+        .card-wide { grid-column: span 2; }
+        .card-tall { grid-row: span 2; }
+
+        .card h3 { font-size: 1.5rem; margin-bottom: 10px; color: var(--accent); }
+        .card p { font-size: 0.9rem; opacity: 0.6; }
+        .price-tag { font-weight: 700; margin-top: 15px; font-size: 1.1rem; }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .container { grid-template-columns: repeat(2, 1fr); }
+            .card-large, .card-wide, .card-tall { grid-column: span 2; grid-row: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#work">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="https://wa.me/919548688580">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <p>NIKHIL SIKKA • 2026 PORTFOLIO</p>
+        <h1>Artistic Vision.<br><i>Technical Precision.</i></h1>
+        <p>Premium Visual Identity & Graphic Design specializing in Luxury Branding[cite: 4, 13].</p>
+    </section>
+
+    <div class="container" id="work">
+        <div class="card card-large">
+            <h3>Bespoke Logo Design</h3>
+            <p>Luxury & modern concepts with minimalist typography for a strong brand identity[cite: 15, 16].</p>
+            <div class="price-tag">Starting from ₹399 </div>
+        </div>
+
+        <div class="card">
+            <h3>Tools</h3>
+            <p>CorelDRAW | Figma | Adobe Suite | Pre-Press.</p>
+        </div>
+
+        <div class="card card-tall">
+            <h3>Luxury Packaging</h3>
+            <p>100% print-ready product boxes, pouches, and label designs[cite: 18, 19, 23].</p>
+            <div class="price-tag">Starting @ ₹499 [cite: 45]</div>
+        </div>
+
+        <div class="card">
+            <h3>Based In</h3>
+            <p>Uttar Pradesh, India[cite: 10].</p>
+        </div>
+
+        <div class="card card-wide">
+            <h3>Social Media Creatives</h3>
+            <p>High-conversion posts and premium color balance for brands[cite: 17].</p>
+            <div class="price-tag">Starting @ ₹199 </div>
+        </div>
+    </div>
+</div>
+
+    <section class="container" style="display: block; text-align: center;">
+        <h2 style="font-family: 'Playfair Display', serif; margin-bottom: 40px;">Selected Works</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+            <img src="https://i.ibb.co/SDgY3NtC/1765726623947-2.jpg" alt="Work 1" style="width: 100%; border-radius: 15px;">
+            <img src="https://i.ibb.co/XZhSZqNT/1765972278336-2.jpg" alt="Work 2" style="width: 100%; border-radius: 15px;">
+            <img src="https://i.ibb.co/1tqwdgq6/1765978831673-2.jpg" alt="Work 3" style="width: 100%; border-radius: 15px;">
+            <img src="https://i.ibb.co/7dMc1HmX/1768488671909-2.jpg" alt="Work 4" style="width: 100%; border-radius: 15px;">
+            <img src="https://i.ibb.co/SDzCHSf1/1765727278734-2.jpg" alt="Work 5" style="width: 100%; border-radius: 15px;">
+            <img src="https://i.ibb.co/7tFmSfz7/1767800895026-2.jpg" alt="Work 6" style="width: 100%; border-radius: 15px;">
+        </div>
+    </section>
+
+</body>
+</html>
+
